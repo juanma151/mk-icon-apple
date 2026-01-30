@@ -24,7 +24,7 @@ in
     stdenvNoCC.mkDerivation {
       inherit pname src;
 
-      version = "1.0.0";
+      version = "3.0.0";
 
       nativeBuildInputs = [
         makeWrapper

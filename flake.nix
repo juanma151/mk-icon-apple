@@ -20,13 +20,13 @@
       ];
 
       perSystem = {pkgs, ...}: let
-        mkIconApple = pkgs.callPackage ./default.nix {
+        mkiconapple = pkgs.callPackage ./default.nix {
           pythonPkg = pkgs.python313;
         };
       in {
         packages = {
-          inherit mkIconApple;
-          default = mkIconApple;
+          inherit mkiconapple;
+          default = mkiconapple;
         };
       };
     };
